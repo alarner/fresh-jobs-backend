@@ -25,6 +25,8 @@ Once your migrations are created, you can run them (ie. create the database tabl
 
 You will also need to create a **back-end** model for each of the data tables. You will need to create these files manually in the `/models` (not /public/scripts/models) directory. You can use the [users](/models/User.js) and [authentication](/models//Authentication.js) models (which are already created for you) as a reference. Be very careful with pluarlization. By convention database table names are pluralized and models are singularized.
 
+For explorer mode you don't need to worry about making the work with the API.
+
 ### API
 
 Once your migrations and models are created, you need to create an API as a way for the front-end to interact with your data (GET, POST, PUT, DELETE). The easiest way to do this is by using the [bookshelf-api]() module. You will first need to install it with npm and then connect it to a new route within your application. This will involve modifying the [app.js](/app.js) and [routes/api1.js](/routes/api1.js) files.
