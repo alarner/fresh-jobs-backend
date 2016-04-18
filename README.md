@@ -11,6 +11,8 @@ Below you'll find data models outlining the structure and relationships of the d
 * applications
 * tags
 
+![Fresh Jobs Data Models](/FreshJobsDataModels.png)
+
 Before you begin you will need to create a new database `createdb freshJobs`.
 
 ### Migrations
@@ -22,8 +24,6 @@ Once your migrations are created, you can run them (ie. create the database tabl
 ### Models
 
 You will also need to create a **back-end** model for each of the data tables. You will need to create these files manually in the `/models` (not /public/scripts/models) directory. You can use the [users](/models/User.js) and [authentication](/models//Authentication.js) models (which are already created for you) as a reference. Be very careful with pluarlization. By convention database table names are pluralized and models are singularized.
-
-![Fresh Jobs Data Models](/FreshJobsDataModels.png)
 
 ### API
 
